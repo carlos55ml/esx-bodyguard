@@ -1,9 +1,10 @@
-fx_version 'cerulean'
+fx_version 'bodacius'
 games { 'gta5' }
 
 author 'Arduous Gamer'
-description 'Bodyguard'
-version '1.1.0'
+name 'esx-bodyguard'
+description 'Bodyguard - Modified by carlos55ml. Works with ESX.'
+version '1.0'
 
 client_scripts {
 	'client.lua',

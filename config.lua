@@ -5,6 +5,5 @@ Bodyguard.SpawnMultiple = false --False = Removes previous bodyguard(s), True = 
 Bodyguard.GuardSkin = 'csb_cop' --Bodyguard ped.
 Bodyguard.GiveWeapon = false --Give weapon to bodyguard.
 Bodyguard.GuardWeapon = 'WEAPON_PISTOL50' --Weapon for bodyguard.
-Bodyguard.SpawnKey = 137 --CAPSLOCK
 Bodyguard.SetInvincible = false --Sets bodyguard invincible.
 Bodyguard.JobAce = 'police'
