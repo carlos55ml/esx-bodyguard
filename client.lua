@@ -37,7 +37,9 @@ AddEventHandler('esx:setJob', function(job)
 end)
 
 function spawnBodyguard()
-        if PlayerData.job ~= nil and PlayerData.job == Bodyguard.JobAce then
+        local jobAce = Bodyguard.JobAce
+        local jobName = PlayerData.job.name
+        if jobName == jobAce then
             local BodyGuardSkinID = GetHashKey(Bodyguard.GuardSkin)
             local playerPed = PlayerPedId()
             local player = GetPlayerPed(playerPed)
@@ -68,5 +70,6 @@ function spawnBodyguard()
         else
             print('[ESX.BODYGUARD] - ERROR: You cannot spawn bodyguards or your job is invalid.')
             TriggerEvent('chatMessage', '^1[ESX.BODYGUARD]^0 - ^1ERROR:^0 You cannot spawn bodyguards or your job is invalid.')
-    Citizen.Wait(10)
+        end
+        Citizen.Wait(10)
 end
